@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+
+
+*{padding:0; margin:0; box-sizing:0;
+    font-family: 'Poppins', sans-serif; }
+ html{
+     font-size:62.5%;
+ }
+ body{
+     display:flex; flex-direction: column; height:100vh;
+ }
+ header{
+     width:100%;
+     height:50vh;
+     background:rgba(0,0,0,0.6)url('https://c1.wallpaperflare.com/preview/294/960/948/university-student-graduation-photo-hats.jpg');
+     background-size:cover;
+     background-blend-mode:darken;
+ }
+nav{
+    height:15vh;
+    display:flex;
+
+}
+nav .logo{
+    width:40%;
+    text-align:center;
+    
+}
+nav .logo img{
+    height:15vh;
+}
+nav .menu{
+    width:60%;
+    display:flex; justify-content: space-between; align-items: center;
+}
+nav .menu a{
+    color:white;
+    font-size:2rem;
+    text-decoration:none;
+    position:relative;
+}
+nav .menu a::before{
+    content:'';
+    height:0.2rem;
+    width:0%;
+    top:100%;
+    position:absolute;
+    background:white;
+    transition:all 0.5s;
+}
+nav .menu a:hover::before{
+    width:100%;
+}
+section{
+    
+    
+}
+section div{ 
+    width:80%;
+    margin:10rem auto;
+   text-align:center;
+   font-size:2.5rem; color:white;
+}
+#main{ width:90%; margin:2rem auto;
+       display:flex; justify-content: space-around;
+    padding:2rem;}
+ #a{ width:60%; }
+ #a p{padding:2rem 0; font-size:1.5rem; text-align:justify;}
+ #b{width:30%; text-align:center; }
+ #b h1{ background:tomato;}
+ table td{}
+#a img {width:100%;}
+td{width:50rem; }
+td h2{text-align:left;}
+td h3{text-align:right;}
+
+#comment{
+    width:90%;
+    margin:4rem auto;
+   
+    padding:2rem 0;
+    
+}
+#comment h1{margin:0rem 2rem;}
+#comment input{ width:30rem; padding:0.5rem; margin:1rem 2rem;}
+#comment button{margin:1rem 2rem;}
+#comment textarea{margin:2rem 2rem; width:30rem;}
+#comment div{border: 1px solid; width:40rem;}
+
+
+
+
+footer{
+    margin-top:auto;
+    
+     }
+     footer p{
+         font-size:2rem;
+     }
+     footer div{
+         width:80%;
+         margin:2rem auto ;
+         text-align:center;
+        
+         
+        }
+     footer .f3{
+         display:flex;
+         justify-content: space-around;
+         
+     }
+     footer .f3 img{
+         width:3rem;
+     }
+
+@media(max-width:800px){
+    html{font-size:50%;}
+    nav .logo img{width:50%;}
+}
+@media(max-width:400px){
+    html{font-size:35%;}
+}
+
+    </style>
+</head>
+<body>
+    
+
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images//oxford.png">
+            </div>
+            <div class="menu">
+                <a href="index.html">home</a>
+                <a href="aboutus.html">about</a>
+                <a href="cources.html">cource</a>
+                <a href="blog.html">blog</a>
+                <a href="contact.html">conatce</a>
+            </div>
+        </nav>
+        <section>
+            <div id="sec">
+            <h1>Our Certification & Online Program</h1>
+            </div>
+        </section>
+
+       </header>
+        <div id="main">
+            <div id="a">
+<img src="https://images.theconversation.com/files/291347/original/file-20190906-175668-1jj8inb.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=668&h=324&fit=crop">
+<h1>our cerificate & program cource</h1>
+<p>Thank you. It was a worthwhile course. Entertaining as well. I just wish that there were more sample homework before the exercises so students could see how the lessons are applied to actual problems.</p>
+<p>asy to follow and not boring. The instructor breaks things down in simple form. The Coursera platform is sometimes a bit quirky but otherwise the content in this course I thought was quite excellent.</p>
+<p>Chapter One: Why We Program (continued)
+
+    In the first chapter we try to cover the "big picture" of programming so you get a "table of contents" of the rest of the book. Don't worry if not everything makes perfect sense the first time you hear it. This chapter is quite broad and you would benefit from reading the chapter in the book in addition to watching the lectures to help it all sink in. You might want to come back and re-watch these lectures after you have funished a few more chapters</p>
+            </div>
+
+            <div id="b">
+                <caption><h1>Post category</h1></caption>
+                <table>
+                    <tr >
+                        <td><h2>program</h2></td ><td><h3>23</h3></td>
+                    </tr>
+                    <tr >
+                        <td><h2>Data science</h2></td ><td><h3>23</h3></td>
+                    </tr>
+                     <tr >
+                        <td><h2>Machine learning</h2></td ><td><h3>23</h3></td>
+                    </tr> 
+                    <tr >
+                        <td><h2>Auto cad</h2></td ><td><h3>23</h3></td>
+                    </tr>
+                     <tr >
+                        <td><h2>Journalism</h2></td ><td><h3>23</h3></td>
+                    </tr> 
+                    <tr >
+                        <td><h2>Commerce</h2></td ><td><h3>23</h3></td>
+                    </tr>
+                </table>
+                
+            </div>
+             
+        </div>
+
+
+
+<div id="comment">
+    <form action='a.php' autocomplete="on" method="GET" target="_self" enctype="application/x-www-form-urlencoded">
+        <div>
+    <h1>Leave a comment</h1>
+    <input type="text" placeholder="enter name" id="n" name="n">
+    <br>
+    <input type="email" placeholder=" enter email" id="mail" name="mail">
+    <br>
+    <textarea placeholder="enter comment" name="cmnt" id="cmnt"></textarea>
+    <br>
+    <button name="sb">Post comment</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+   
+
+
+<footer>
+    <div class="f1">
+        <h1>About us</h1>
+    </div>
+    <div class="f2">
+        <p>web site devloped by gautam parchanda by html and css</p>
+    </div>
+    <div class="f3">
+        <img src="images/whats.png">
+        <img src="images/fb.jpg">
+        <img src="images//insta.png">
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
